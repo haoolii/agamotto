@@ -60,7 +60,7 @@
       "projectType": "application",
       "root": "apps/dashboard",
       "sourceRoot": "apps/dashboard/src",
-      "prefix": "agamotto",
+      "prefix": "agto",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
@@ -246,7 +246,7 @@
       "projectType": "library",
       "root": "libs/material",
       "sourceRoot": "libs/material/src",
-      "prefix": "agamotto",
+      "prefix": "agto",
       "architect": {
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
