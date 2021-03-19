@@ -15,7 +15,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@agamotto/api-interfaces": ["libs/api-interfaces/src/index.ts"]
+      "@agamotto/api-interfaces": ["libs/api-interfaces/src/index.ts"],
+      "@agamotto/material": ["libs/material/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
