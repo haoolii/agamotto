@@ -1,3 +1,11 @@
+@import 'constants';
+
+agamotto-app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
 agto-navbar {
   position: fixed;
   top: 0;
@@ -6,9 +14,22 @@ agto-navbar {
   z-index: 2;
 }
 
+agamotto-app > agto-captch-sidenav {
+  flex: 1;
+}
+
 agamotto-app > router-outlet + .main-content,
 agamotto-app > router-outlet + agto-captch-sidenav {
   margin-top: 56px;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
+}
+
+@media (max-width: $extra-small-breakpoint-width) {
+  agamotto-app > router-outlet + .main-content,
+  agamotto-app > router-outlet + agto-captch-sidenav {
+    // margin-top: 92px;
+    margin-top: 56px;
+    overflow-y: visible;
+  }
 }

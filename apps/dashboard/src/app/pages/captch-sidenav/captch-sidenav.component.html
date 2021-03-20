@@ -1,20 +1,22 @@
 <mat-sidenav-container class="captch-viewer-sidenav-container">
   <mat-sidenav
     #sidenav
+    *ngIf="(isScreenSmall | async)"
     class="captch-viewer-sidenav"
-    [opened]="true"
-    mode="side"
-    [fixedTopGap]="true"
-    *ngIf="false"
+    [opened]="(isScreenSmall | async) === false"
+    [mode]="(isScreenSmall | async) ? 'over' : 'side'"
+    [fixedInViewport]="(isScreenSmall | async)"
+    [fixedTopGap]="(isExtraScreenSmall | async) ? 56 : 56"
   >
-    <agto-captch-nav *ngIf="false"></agto-captch-nav>
+    <agto-captch-nav></agto-captch-nav>
   </mat-sidenav>
 
   <div class="captch-sidenav-content">
-    <agto-captch-page-header></agto-captch-page-header>
+    <agto-captch-page-header (toggleSidenav)="toggleSidenav(sidenav)"></agto-captch-page-header>
     <div class="captch-sidenav-inner-content">
       <main class="captch-sidenav-body-content">
-        <agto-captch-nav></agto-captch-nav>
+        <agto-captch-nav *ngIf="(isScreenSmall | async) === false">
+        </agto-captch-nav>
         <router-outlet></router-outlet>
       </main>
     </div>

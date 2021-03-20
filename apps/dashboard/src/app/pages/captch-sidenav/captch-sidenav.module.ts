@@ -7,7 +7,7 @@ import { CaptchSidenavComponent } from './captch-sidenav.component';
 import { CaptchPageHeaderModule } from '../captch-page-header/captch-page-header.module';
 import { ReactiveFormsModule } from '@angular/forms';
 import { CaptchNavComponent } from '../captch-nav/captch-nav.component';
-// import { CaptchPageHeaderComponent } from './../captch-page-header/captch-page-header.component';
+import { LayoutModule } from '@angular/cdk/layout';
 
 
 @NgModule({
@@ -17,6 +17,7 @@ import { CaptchNavComponent } from '../captch-nav/captch-nav.component';
     MaterialModule,
     CaptchPageHeaderModule,
     ReactiveFormsModule,
+    LayoutModule,
     RouterModule.forChild([
       {
         path: '',
