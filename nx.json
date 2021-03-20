@@ -8,7 +8,7 @@
     "nx.json": "*"
   },
   "affected": { "defaultBase": "master" },
-  "npmScope": "agamotto",
+  "npmScope": "agto",
   "tasksRunnerOptions": {
     "default": {
       "runner": "@nrwl/workspace/tasks-runners/default",
@@ -20,6 +20,8 @@
     "dashboard-e2e": { "tags": [], "implicitDependencies": ["dashboard"] },
     "api": { "tags": [] },
     "api-interfaces": { "tags": [] },
-    "material": { "tags": [] }
+    "material": { "tags": [] },
+    "core-data": { "tags": [] },
+    "ui": { "tags": [] }
   }
 }

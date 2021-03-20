@@ -1,0 +1,18 @@
+<ng-container [formGroup]="form">
+  <ng-container formArrayName="codes">
+    <div
+      *ngFor="let code of codes.controls; let i = index;"
+      class="code-container"
+    >
+      <mat-form-field appearance="fill">
+        <input
+          #input
+          matInput
+          maxlength="1"
+          (keydown)="input.select()"
+          [formControlName]="i"
+        >
+      </mat-form-field>
+    </div>
+  </ng-container>
+</ng-container>

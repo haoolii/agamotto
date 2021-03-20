@@ -16,7 +16,9 @@
     "baseUrl": ".",
     "paths": {
       "@agamotto/api-interfaces": ["libs/api-interfaces/src/index.ts"],
-      "@agamotto/material": ["libs/material/src/index.ts"]
+      "@agamotto/material": ["libs/material/src/index.ts"],
+      "@agamotto/core-data": ["libs/core-data/src/index.ts"],
+      "@agamotto/ui": ["libs/ui/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
