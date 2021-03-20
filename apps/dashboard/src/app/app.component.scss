@@ -5,3 +5,10 @@ agto-navbar {
   right: 0;
   z-index: 2;
 }
+
+agamotto-app > router-outlet + .main-content,
+agamotto-app > router-outlet + agto-captch-sidenav {
+  margin-top: 56px;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}

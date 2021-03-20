@@ -1,0 +1,13 @@
+@import 'constants';
+
+agto-captch-sidenav {
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+}
+
+.captch-sidenav-content {
+  display: flex;
+  flex-direction: column;
+  // min-height: 100%;
+}

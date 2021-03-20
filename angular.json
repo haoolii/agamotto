@@ -76,6 +76,9 @@
               "apps/dashboard/src/assets"
             ],
             "styles": ["apps/dashboard/src/styles.scss"],
+            "stylePreprocessorOptions": {
+              "includePaths": ["node_modules", "src", "apps/dashboard/src/styles"]
+            },
             "scripts": []
           },
           "configurations": {

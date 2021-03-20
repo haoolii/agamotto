@@ -1,0 +1,22 @@
+<mat-sidenav-container class="captch-viewer-sidenav-container">
+  <mat-sidenav
+    #sidenav
+    class="captch-viewer-sidenav"
+    [opened]="true"
+    mode="side"
+    [fixedTopGap]="true"
+    *ngIf="false"
+  >
+    <agto-captch-nav *ngIf="false"></agto-captch-nav>
+  </mat-sidenav>
+
+  <div class="captch-sidenav-content">
+    <agto-captch-page-header></agto-captch-page-header>
+    <div class="captch-sidenav-inner-content">
+      <main class="captch-sidenav-body-content">
+        <agto-captch-nav></agto-captch-nav>
+        <router-outlet></router-outlet>
+      </main>
+    </div>
+  </div>
+</mat-sidenav-container>

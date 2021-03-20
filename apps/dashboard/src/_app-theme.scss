@@ -1,6 +1,7 @@
 @import '~@angular/material/theming';
 
 @import './app/shared/navbar/navbar-theme';
+@import './app/pages/captch-sidenav/captch-sidenav-theme';
 
 @mixin agto-app-theme($theme) {
   $primary: map-get($theme, primary);
@@ -28,6 +29,7 @@
   }
 
   @include nav-bar-theme($theme);
+  @include captch-viewer-sidenav-theme($theme);
 }
 
 $primary: mat-palette($mat-gray, 900, 700, 400);

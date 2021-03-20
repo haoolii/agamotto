@@ -8,10 +8,20 @@ import { AppRoutingModule } from './app-routing.module';
 import { HomepageModule } from './pages/homepage/homepage.module';
 import { NavbarComponent } from './shared/navbar/navbar.component';
 import { MaterialModule } from '@agamotto/material';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [AppComponent, NavbarComponent],
-  imports: [BrowserModule, HttpClientModule, BrowserAnimationsModule, AppRoutingModule, MaterialModule, HomepageModule],
+  imports: [
+    BrowserModule,
+    HttpClientModule,
+    BrowserAnimationsModule,
+    MaterialModule,
+    FormsModule,
+    ReactiveFormsModule,
+    AppRoutingModule,
+    HomepageModule
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
