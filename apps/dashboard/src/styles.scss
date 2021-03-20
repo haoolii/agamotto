@@ -1,6 +1,5 @@
 @import './app-theme';
 @import './styles/general';
-@include mat-core();
 
 @include angular-material-theme($theme);
 @include agto-app-theme($theme);

@@ -1,1 +1,53 @@
-<p>homepage works!</p>
+<header focusOnNavigation class="agto-header-background"
+       aria-label="Get started" id="homepage-header">
+  <div class="agto-header-section">
+    <div class="agto-header-headline">
+      <h1 class="mat-h1">Agamotto Stock</h1>
+      <h2>台股券商阿迦莫多之眼</h2>
+    </div>
+    <div class="agto-header-start">
+      <a mat-raised-button class="agto-button">Developing</a>
+    </div>
+  </div>
+</header>
+
+<main class="agto-homepage-promo">
+  <div class="agto-homepage-row agto-introduction">
+    <div class="agto-homepage-row-column">
+      <h2>券商資料蒐集</h2>
+      <p>
+        使用證交所提供之每日券商個股進出資料，透過TensorFlow驗證碼訓練，進行自動爬蟲蒐集券商資料。
+      </p>
+      <p>
+        仍需人力進行基本訓練資料集校準。
+      </p>
+    </div>
+    <div class="agto-homepage-row-column">
+      <h2>券商資料彙整</h2>
+      <p>
+        每日券商資料彙整於資料庫，並產出各種分析所需之欄位、日期、價量。使分析更方便。
+      </p>
+    </div>
+    <div class="agto-homepage-row-column">
+      <h2>機器學習分析</h2>
+      <p>
+        透過過往資料及結果，使用Tensorflow預測未來走向，此為Agamotto的終極目標。
+      </p>
+      <p>
+        需仰賴蒐集跟彙整功能完善，資料集量足夠才有辦法實現。
+      </p>
+    </div>
+  </div>
+
+  <mat-divider></mat-divider>
+
+  <div class="agto-homepage-guides agto-homepage-carousel-row">
+    <h2>Guides</h2>
+
+    <a class="agto-link" routerLink="/guides">
+      View all guides
+      <mat-icon>chevron_right</mat-icon>
+    </a>
+  </div>
+
+</main>

@@ -1,1 +1,77 @@
 @import '~@angular/material/theming';
+
+
+@mixin home-page-theme($theme) {
+  $primary: map-get($theme, primary);
+  $accent: map-get($theme, accent);
+  $warn: map-get($theme, warn);
+  $background: map-get($theme, background);
+  $foreground: map-get($theme, foreground);
+
+  agto-homepage {
+    .agto-header-background {
+      background: mat-color($primary);
+    }
+
+    .agto-header-headline {
+      color: mat-color($primary, default-contrast);
+    }
+
+    .agto-header-start {
+      color: mat-color($primary);
+
+      .agto-link {
+        color: mat-color($primary, default-contrast);
+      }
+    }
+
+    .agto-homepage-row {
+      color: mat-color($foreground, secondary-text);
+    }
+
+    .agto-homepage-carousel-row h2 {
+      color: mat-color($foreground, secondary-text);
+    }
+
+    a.agto-link, a.agto-featured-components-carousel-item {
+      color: mat-color($foreground, secondary-text)
+    }
+
+    a.agto-link:hover {
+      color: mat-color($foreground, text);
+    }
+
+    .agto-homepage-guides-card-divider {
+      background: mat-color($accent)
+    }
+
+    [carousel-item]:hover {
+      .agto-homepage-guides-card {
+        background: mat-color($background, hover);
+      }
+    }
+
+    [carousel-item]:focus {
+      .agto-homepage-guides-card {
+        background: mat-color($background, focused-button);
+      }
+      outline: none;
+    }
+
+    .agto-featured-components-carousel-item:hover {
+      img {
+        transform: scale(1.2);
+      }
+
+      box-shadow:inset 0 0 0 1.5px mat-color($foreground, divider);
+    }
+
+    .agto-featured-components-carousel-item:focus {
+      img {
+        transform: scale(1.2);
+      }
+
+      box-shadow:inset 0 0 0 1.5px mat-color($foreground, disabled);
+    }
+  }
+}

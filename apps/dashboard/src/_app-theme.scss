@@ -2,6 +2,9 @@
 
 @import './app/shared/navbar/navbar-theme';
 @import './app/pages/captch-sidenav/captch-sidenav-theme';
+@import './app/pages/homepage/homepage-theme';
+
+@include mat-core();
 
 @mixin agto-app-theme($theme) {
   $primary: map-get($theme, primary);
@@ -30,6 +33,7 @@
 
   @include nav-bar-theme($theme);
   @include captch-viewer-sidenav-theme($theme);
+  @include home-page-theme($theme);
 }
 
 $primary: mat-palette($mat-gray, 900, 700, 400);

@@ -1,3 +1,4 @@
+import { CaptchIndentificationComponent } from './../captch-indentification/captch-indentification.component';
 import { RouterModule } from '@angular/router';
 import { MaterialModule } from '@agamotto/material';
 import { NgModule } from '@angular/core';
@@ -20,12 +21,16 @@ import { CaptchNavComponent } from '../captch-nav/captch-nav.component';
       {
         path: '',
         component: CaptchSidenavComponent,
-        // children: [
-        //   // {
-        //   //   path: 'captcha',
-        //   //   component: CaptchPageHeaderComponent
-        //   // }
-        // ]
+        children: [
+          {
+            path: '',
+            loadChildren: () => import('../captch-main/captch-main.module').then(m => m.CaptchMainModule)
+          },
+          {
+            path: 'indentification',
+            loadChildren: () => import('../captch-indentification/captch-indentification.module').then(m => m.CaptchIndentificationModule)
+          }
+        ]
       }
     ])
   ]
