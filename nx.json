@@ -22,6 +22,7 @@
     "api-interfaces": { "tags": [] },
     "material": { "tags": [] },
     "core-data": { "tags": [] },
-    "ui": { "tags": [] }
+    "ui": { "tags": [] },
+    "api-utils": { "tags": [] }
   }
 }
