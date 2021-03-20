@@ -19,7 +19,8 @@
       "@agamotto/material": ["libs/material/src/index.ts"],
       "@agamotto/core-data": ["libs/core-data/src/index.ts"],
       "@agamotto/ui": ["libs/ui/src/index.ts"],
-      "@agto/api-utils": ["libs/api-utils/src/index.ts"]
+      "@agto/api-utils": ["libs/api-utils/src/index.ts"],
+      "@agto/api-repo": ["libs/api-repo/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

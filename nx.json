@@ -23,6 +23,7 @@
     "material": { "tags": [] },
     "core-data": { "tags": [] },
     "ui": { "tags": [] },
-    "api-utils": { "tags": [] }
+    "api-utils": { "tags": [] },
+    "api-repo": { "tags": [] }
   }
 }

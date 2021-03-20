@@ -6,5 +6,6 @@ module.exports = {
     '<rootDir>/libs/core-data',
     '<rootDir>/libs/ui',
     '<rootDir>/libs/api-utils',
+    '<rootDir>/libs/api-repo',
   ],
 };
